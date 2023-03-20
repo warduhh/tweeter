@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  height: 600px;
+  width: 100vw;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 140px;
+  background-color: #cdcce3;
+  background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
+}
