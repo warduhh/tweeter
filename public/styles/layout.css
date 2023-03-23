@@ -31,3 +31,12 @@ body {
  nav {font-family: 'Bungee', 
  Sans-Serif;
 }
+
+main {
+  width: 100%;
+  background-color: inherit;
+  display:flex;
+  justify-content: center;
+  padding: 60px;
+
+}
