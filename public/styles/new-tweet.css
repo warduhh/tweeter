@@ -29,3 +29,14 @@ background-color: #f4f1ec;
   font-family: 'Bungee', cursive;
 }
 
+.tweet{
+  display:table-column;
+  margin: auto;
+  padding: 50px;
+width: 100%;
+border-top-color: transparent;
+border-left-color: transparent;
+border-right-color: transparent;
+border-bottom: 4px solid dimgray;
+background-color: #f4f1ec;  
+}
