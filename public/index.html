@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <!-- Meta Information -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tweeter - Home Page</title>
 
  
@@ -27,7 +30,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/all-tweets.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/old-tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -35,6 +38,9 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+    integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   </head>
 
@@ -50,12 +56,14 @@
       </div>
     </nav>
 
+    name="text" id="tweet-text"></textarea>
+  <div class="desktop-view">
     <header class="header">
-      <div>
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div class="user-name"><strong>Warda</strong> Nur</div>
+      <div class="avatar-header">
+        <img src="/images/profile-hex.png">
+        <br>
+        <div class="name">
+          <h2>Warda Nur</h2>
   </header>
   
     <!-- Page-specific (main) content here -->
@@ -76,8 +84,14 @@
   </section>
 <section>
       <article class="tweet">
-        <header><span> <img class="avatar" src="https://i.imgur.com/73hZDYK.png"> My Header </span> <h3>@user</h3> </header>
-            <i class="fa-regular fa-face-smile"> <span> Newton </span> </i>
+        <header>
+          <span>
+             <img class="avatar" src="https://i.imgur.com/73hZDYK.png">
+           <span> Newton </span> 
+           </span>
+             <h3>@user</h3> </header>
+            <i class="fa-regular fa-face-smile"> 
+          
           </span>
           <span> @Sirisaac </span>
         </header>

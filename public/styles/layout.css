@@ -5,7 +5,9 @@
  */
 html {
   box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -39,3 +41,56 @@ main {
   justify-content: center;
   padding: 60px;
 }
+
+/* Tablet and phone responsive view */
+@media only screen and (max-width: 1024px) {
+  .main-container {
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+  }
+  .desktop-view {
+    width: 100%;
+
+  }
+  .new-tweet, .old-tweets {
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+
+}
+/* Desktop responsive view */
+@media only screen and (min-width: 1024px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+    width:100%;
+  }
+  /* header-main */
+  .desktop-view {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 7rem;
+  }
+  .header {
+    padding: 5rem;
+    margin: 3rem;
+    height: 50vmin;   
+  }
+  .new-tweet {
+    width:100%;
+  }
+  .box {
+    width:100%;
+
+  }
+  .old-tweets {
+    width: 100%;
+  } 
+}
+
