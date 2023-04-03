@@ -17,29 +17,20 @@ html {
  */
 
 body {
+  align-items: center;
   color: #545149;
   background-color: #f4f1ec;
+  display: flex;
+  flex-direction: column;
   font-size: 24px;
- 
+  font-family: "Source Sans Pro";
 }
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
- body {font-family: 'Source Sans Pro', sans-serif;
- }
- 
-
- nav {font-family: 'Bungee', 
- Sans-Serif;
+.desktop-view h2 {
+  color: white;
 }
-
-main {
-  width: 100%;
-  background-color: inherit;
-  display:flex;
-  justify-content: center;
-  padding: 60px;
+.main-container {
+  width: 90%;
+  background-color: #f4f1ec;
 }
 
 /* Tablet and phone responsive view */
@@ -52,16 +43,18 @@ main {
   }
   .desktop-view {
     width: 100%;
-
+    
   }
   .new-tweet, .old-tweets {
     margin-right: 3rem;
     margin-left: 3rem;
   }
-
+  
 }
+
 /* Desktop responsive view */
 @media only screen and (min-width: 1024px) {
+
   .main-container {
     display: flex;
     flex-direction: column;
@@ -87,10 +80,9 @@ main {
   }
   .box {
     width:100%;
-
+    
   }
   .old-tweets {
     width: 100%;
   } 
 }
-
